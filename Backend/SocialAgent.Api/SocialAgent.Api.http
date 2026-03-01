@@ -1,0 +1,6 @@
+@SocialAgent.Api_HostAddress = http://localhost:5221
+
+GET {{SocialAgent.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
