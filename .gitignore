@@ -1,0 +1,62 @@
+# ==========================================
+# .NET / Backend (C#)
+# ==========================================
+# Build results
+**/[Bb]in/
+**/[Oo]bj/
+**/[Pp]ublish/
+**/[Rr]elease/
+
+# Database (SQLite)
+# We push the Migrations folder, but NEVER the actual data file
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# User-specific project settings
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+**/xs/
+UserPrefs.xml
+SocialAgent.Api-Debug.json
+
+# Environment Secrets
+# We keep the template appsettings.json, but ignore development overrides
+appsettings.Development.json
+**/Properties/launchSettings.json
+
+# ==========================================
+# Angular / Frontend (TypeScript)
+# ==========================================
+# Dependencies
+**/node_modules/
+
+# Build outputs
+**/dist/
+**/.angular/
+
+# IDE/Editor files
+.editorconfig
+.browserslistrc
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# OS / System Specific
+# ==========================================
+# Mac (shubhamkaushik@Mac)
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
