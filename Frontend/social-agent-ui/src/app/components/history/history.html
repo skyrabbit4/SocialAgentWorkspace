@@ -1,0 +1,29 @@
+<div class="history-card">
+  <h2>Post History</h2>
+  <button (click)="refreshHistory()" class="refresh-btn">Refresh List</button>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Content</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (post of posts; track post.id) {
+        <tr>
+          <td>{{ post.createdAt | date:'medium' }}</td>
+          <td>{{ post.content }}</td>
+          <td>
+            <span class="badge">Published</span> 
+          </td>
+        </tr>
+      } @empty {
+        <tr>
+          <td colspan="3" style="text-align: center;">No posts yet. Send your first tweet!</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

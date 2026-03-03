@@ -1,11 +1,12 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HistoryComponent } from './components/history/history';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,HistoryComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
